@@ -4,7 +4,7 @@
 }
 
 body{
-    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(fondo.png);
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(/imagenes/indexBG.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -56,6 +56,7 @@ p{
             background: black;
             border: 2px solid black;
             margin-top: 0;
+            box-shadow: 0 0  20px #FFF;
         }
 
         &:active{
