@@ -4,7 +4,7 @@
 }
 
 body{
-    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(/imagenes/indexBG.png);
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(indexBG.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
