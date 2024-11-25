@@ -63,21 +63,13 @@ body{
     justify-content: center;
     align-items: center;
 
-    i{
-        color: black;
-    }
 
     &:hover{
         background: black;
         color: white;
         box-shadow: 0 0  10px 4px #FFF;
-        i{
-            color: white;
-        }
+        color: white;
     }
-
-    transition: all .3s;
-}
 
 
 
@@ -107,13 +99,12 @@ h2 {
     gap: 30px;
 }
 
-/* Cada Producto In */
 .producto {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    flex: 1 1 calc(33.33% - 40px); /* Tres productos por fila */
+    flex: 1 1 calc(33.33% - 40px); 
     margin: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -135,7 +126,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Nombre y precios de productos */
+/* Nom y prec de productos */
 .producto h3 {
     font-size: 1.3em;
     color: #333;
@@ -178,16 +169,15 @@ footer{
     }
 }
 
-/* Media Queries para la Responsividad */
 @media (max-width: 768px) {
     .producto {
-        flex: 1 1 calc(50% - 40px); /* Dos productos por fila */
+        flex: 1 1 calc(50% - 40px); 
     }
 }
 
 @media (max-width: 480px) {
     .producto {
-        flex: 1 1 calc(100% - 40px); /* Un producto por fila en pantallas pequeñas */
+        flex: 1 1 calc(100% - 40px); 
     }
 
     h2 {
