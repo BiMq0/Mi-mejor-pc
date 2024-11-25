@@ -69,8 +69,12 @@ body{
         color: white;
         box-shadow: 0 0  10px 4px #FFF;
         color: white;
+        i{
+            color: white;
+        }
     }
-
+    transition: all .3s;
+}
 
 
 
