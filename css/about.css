@@ -142,7 +142,7 @@ section.primero p{
 
 
 section.primero img.imagen_primero{
-    width: 40%;
+    width: 40em;
     margin: 1em;
     box-shadow: 0 0 20px purple;
     border-radius: 10px;
