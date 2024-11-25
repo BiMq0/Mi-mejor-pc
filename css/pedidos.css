@@ -4,9 +4,8 @@
     padding: 0;
     font-family: sans-serif;
 }
-
 body{
-    background: linear-gradient(56deg,rgb(84, 21, 90),rgb(14, 78, 110));
+    background: linear-gradient(40deg, rgba(2,0,36,1), rgba(121,9,118,1), rgba(89,0,255,1));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -41,14 +40,13 @@ body{
 #navLogo{
     color: #FFF;
     text-decoration: none;
-    font-size: 2em;
     margin-left: 2em;
     position: absolute;
     left: 0;
     top: .4em;
     
     #logo{
-        width: 3em;
+        width: 10em;
     }
 }
 
@@ -82,7 +80,7 @@ body{
 }
 
 footer{
-    background: #333;
+    background: #000;
     padding: 1em;
     position: fixed;
     bottom: 0;

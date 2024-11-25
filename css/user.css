@@ -6,7 +6,7 @@
 }
 
 body{
-    background: linear-gradient(56deg,rgb(84, 21, 90),rgb(14, 78, 110));
+    background: linear-gradient(40deg, rgba(2,0,36,1), rgba(121,9,118,1), rgba(89,0,255,1));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -42,14 +42,13 @@ body{
 #navLogo{
     color: #FFF;
     text-decoration: none;
-    font-size: 2em;
     margin-left: 2em;
     position: absolute;
     left: 0;
     top: .4em;
     
     #logo{
-        width: 3em;
+        width: 10em;
     }
 }
 
@@ -89,11 +88,12 @@ body{
     display: flex;
     justify-content: space-around;
 
-    img{
+    #fotoPerfil{
         width: 20%;
         margin: 0 8em;
-        border-radius: 50%;
+        border-radius: 2em;
         object-fit: cover;
+        border: 2px solid black;
     }
 }
 
@@ -113,7 +113,8 @@ body{
         width: fit-content;
         background: rgba(0, 0,0, .7);
         padding: 10px;
-        margin: 1em 0;    
+        margin: 1em 0;
+        font-size: 1.2em;
     }
     button{
         width: fit-content;
@@ -128,7 +129,7 @@ body{
 }
 
 footer{
-    background: #333;
+    background: #000;
     padding: 1em;
     position: fixed;
     bottom: 0;

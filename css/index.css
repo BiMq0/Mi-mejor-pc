@@ -8,7 +8,7 @@
 }
 
 body{
-    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,1)),url(https://bimq0.github.io/Mi-mejor-pc/imagenes/indexBG.png);
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,1)),url(/imagenes/indexBG.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ body{
 }
 
 #titulo{
-    width: 35em;
+    width: 50em;
     margin: 1em 0 1em 0;
 }
 
@@ -104,7 +104,7 @@ p{
 
 @media screen and (max-width: 640px){
     #titulo{
-        width: 25em;
+        width: 100%;
         margin: 5em 0 0 0;
     }
 
