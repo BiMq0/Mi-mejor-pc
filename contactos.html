@@ -12,52 +12,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar">
-        <a href="index.html" id="navLogo"><img id="logo" src="imagenes/logo.png" alt="Mi Mejor PC"></a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pedidos.html">Pedidos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactos.html">Contacto</a>
-          </li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <a href="index.html" id="navLogo"><img id="logo" src="imagenes/logo.png" alt="Mi Mejor PC"></a>
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pedidos.html">Pedidos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="productos.html">Productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactos.html">Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a href="user.html" id="btnUsuario"><i class="fa-solid fa-user fa-xl"></i></a>
+      </li>
+    </ul>
+  </nav>
     
     <section class="formulario">
-      <p class="titulo">Para <span class="luminez">MEJOR</span> atencion, contactenos</p> <br>
-        <form action="" method="POST">
+      <p class="titulo">Para una <span class="luminez">MEJOR</span> atencion, contactenos</p> <br>
           <form id="contacto-formulario">
-            <div class="entrada">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-            </div>
-            <div class="entrada">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Tu email" required>
-            </div>
-            <div class="entrada">
-                <label for="subject">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
-            </div>
-            <button type="submit">Enviar</button>
+
+            <div class="datos">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
+          </div>
+
+            <div class="mensaje">
+              <label for="subject">Asunto:</label>
+              <textarea name="subject" placeholder="Introduzca su mensaje" required></textarea>
+              <button type="submit">Enviar</button>
+            </div>  
         </form>
-      </form>
     </section>
+
     <footer>
-        <ul>
-          <li>Contacto</li>
-          <li>Redes sociales</li>
-          <li>Política de privacidad</li>
-          <li>Ayuda</li>
-          <li>Terminos y condiciones</li>
-        </ul>
-    </footer>
+      <ul>
+        <li><a href="contactos.html" class="linksFooter">Contacto</a></li>
+        <li><span id="redes">Redes Sociales</span>
+        </li>
+        <li><a href="sobre_nosotros.html" class="linksFooter">Sobre Nosotros</a></li>
+        <li><a href="PoliticadePrivacidad.html" class="linksFooter">Politica de Privacidad</a></li>
+        <li><a href="terminos.html" class="linksFooter">Terminos y condiciones</li>
+      </ul>
+  </footer>
 </body>
 </html>
