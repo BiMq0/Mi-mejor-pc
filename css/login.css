@@ -1,0 +1,97 @@
+*{
+    color: #FFF;
+    font-family: monospace;
+
+    &::selection{
+        background: lightseagreen;
+    }
+}
+
+body{
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,1)),url(https://bimq0.github.io/Mi-mejor-pc/imagenes/indexBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+
+}
+
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background: rgba(0,0,0,.6);
+    box-shadow: 0 0 20px purple;
+    border-radius: 10px;
+    padding: 2em;
+
+    h1{
+        font-size: 3em;
+        padding: 1em;
+        background: rgba(0,0,0,.8);
+        box-shadow: 0 0 20px purple;
+        border-radius: 10px;
+        margin: 1em;
+        color: #FFF;
+        text-shadow: 0 0 10px #FFF;
+        align-self: center;
+    }
+
+    input{
+        width: 80%;
+        padding: 1em;
+        border: none;
+        background: rgba(0,0,0,.8);
+        box-shadow: 0 0 20px purple;
+        border-radius: 10px;
+        margin: 1em;
+        color: #FFF;
+        font-size: 1.6em;
+        text-shadow: 0 0 10px #FFF;
+        &:placeholder-shown{
+            font-style: oblique;
+        }
+    }
+
+    label{
+        font-size: 2em;
+        color: #FFF;
+        text-shadow: 0 0 10px #FFF;
+    }
+
+    a{
+        color: aquamarine;
+    }
+
+    input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+    }
+
+    button{
+        padding: 1em;
+        border: none;
+        background: rgba(0,0,0,.8);
+        box-shadow: 0 0 20px purple;
+        border-radius: 10px;
+        margin: 1em;
+        color: #FFF;
+        text-shadow: 0 0 10px #FFF;
+        font-size: 2em;
+        align-self: center;
+        transition: .2s;
+
+        &:hover{
+            background: white;
+            color: black;
+            box-shadow: 0 0  10px 4px #FFF;
+            i{
+                color: white;
+            }
+        }
+    }
+}
