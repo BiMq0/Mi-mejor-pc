@@ -81,26 +81,23 @@ body{
 
 
 
-/* Main content */
 main {
     margin: 1em 0 5em 0; 
     border-radius: 10px;
 }
 
-/* Títulos de cada seccion */
 h2 {
     text-align: center;
     margin:  0 15%;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #FFF;
+    color: rgba(100,254,250,1);
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid black;
     padding: 1em 0 1em 0;
 }
 
-/* Contenedor de los productos */
 .productos {
     display: flex;
     flex-wrap: wrap;
@@ -112,12 +109,11 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.7);
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         text-align: center;
-        border: 1px solid #ddd;
         width: 20em;
         padding: 1em;
         max-width: 30em;
@@ -135,16 +131,16 @@ h2 {
 
         h3 {
             font-size: 1.1em;
-            color: #000;
+            color: white;
         }
 
         p {
             font-size: 1.1em;
             margin: 5px 0;
-            color: #000;
+            color: white;
 
             strong {
-                color: #ab0f0f;
+                color: aquamarine;
             }
         }
     }
@@ -176,10 +172,37 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+
     ul{
+        width: 110%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         list-style: none;
         color: #FFF;
+        
+        li{
+            a{
+                padding: 1em;
+                border-radius: 10px;
+                text-decoration: none;
+                transition: all .2s;
+                &:hover{
+                    color: black;
+                    background: white;
+                }
+            }
+        }
+
+        #redes{
+            padding: 1em;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all.2s;
+            cursor: pointer;
+            &:hover{
+                color: black;
+                background: white;
+            }
+        }
     }
 }

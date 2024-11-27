@@ -182,10 +182,37 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+
     ul{
+        width: 110%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         list-style: none;
         color: #FFF;
+        
+        li{
+            a{
+                padding: 1em;
+                border-radius: 10px;
+                text-decoration: none;
+                transition: all .2s;
+                &:hover{
+                    color: black;
+                    background: white;
+                }
+            }
+        }
+
+        #redes{
+            padding: 1em;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all.2s;
+            cursor: pointer;
+            &:hover{
+                color: black;
+                background: white;
+            }
+        }
     }
 }

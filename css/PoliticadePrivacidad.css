@@ -5,18 +5,20 @@
     font-family: sans-serif;
 }
 body{
-    background: linear-gradient(56deg,rgb(42, 21, 90),rgb(14, 78, 110));
+    background: linear-gradient(40deg, rgba(2,0,36,1), rgba(121,9,118,1), rgba(89,0,255,1));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .navbar{
     width: 100%;
     height: 6vh;
+    margin-bottom: 1em;
     padding: 2em 0;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
+
 .nav-list{
     width: 30%;
     list-style: none;
@@ -24,31 +26,69 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
 .nav-link{
     font-size: 1.3em;
     text-decoration: none;
 }
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
 #navLogo{
     color: #FFF;
     text-decoration: none;
-    font-size: 2em;
     margin-left: 2em;
     position: absolute;
     left: 0;
     top: .4em;
+    
     #logo{
-        width: 3em;
+        width: 10em;
     }
 }
+
+#btnUsuario{
+    background-color: white;
+    color: black;
+    padding: .6em;
+    border-radius: 10px;
+    right: 0;
+
+    height: 40px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i{
+        color: black;
+    }
+
+    &:hover{
+        background: black;
+        color: white;
+        box-shadow: 0 0  10px 4px #FFF;
+        i{
+            color: white;
+        }
+    }
+
+    transition: all .3s;
+}
+
+
 section.Política{
-    font-size: 1.5em;
-    margin: 6em;
+    font-size: 1em;
+    margin: 2em 3em 5em 3em;
     padding: 2em;
     background: rgba(0,0,0,.8);
     box-shadow: 0 0 20px purple;
     border-radius: 10px;
-    margin: 1em;
 }
+
 section.Política h1{
     font-size: 2em;
     padding: 1em;
@@ -57,21 +97,50 @@ section.Política h1{
     color: lightseagreen;
 } 
 section.Política h2{
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 1em;
     font-weight: bold;
     color: lightseagreen;
 }
+
+
 footer{
     background: #000;
     padding: 1em;
     position: fixed;
     bottom: 0;
     width: 100%;
+
     ul{
+        width: 110%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         list-style: none;
         color: #FFF;
+        
+        li{
+            a{
+                padding: 1em;
+                border-radius: 10px;
+                text-decoration: none;
+                transition: all .2s;
+                &:hover{
+                    color: black;
+                    background: white;
+                }
+            }
+        }
+
+        #redes{
+            padding: 1em;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all.2s;
+            cursor: pointer;
+            &:hover{
+                color: black;
+                background: white;
+            }
+        }
     }
 }

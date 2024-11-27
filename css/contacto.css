@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body{
-    background: linear-gradient(56deg,rgb(42, 21, 90),rgb(14, 78, 110));
+    background: linear-gradient(40deg, rgba(2,0,36,1), rgba(121,9,118,1), rgba(89,0,255,1));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -17,6 +17,7 @@ body{
     justify-content: flex-end;
     align-items: flex-start;
 }
+
 .nav-list{
     width: 30%;
     list-style: none;
@@ -24,85 +25,150 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
 .nav-link{
     font-size: 1.3em;
     text-decoration: none;
 }
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
 #navLogo{
     color: #FFF;
     text-decoration: none;
-    font-size: 2em;
     margin-left: 2em;
     position: absolute;
     left: 0;
     top: .4em;
+    
     #logo{
-        width: 3em;
+        width: 10em;
     }
 }
 
-section.formulario {
-    
+#btnUsuario{
+    background-color: white;
+    color: black;
+    padding: .6em;
+    border-radius: 10px;
+    right: 0;
+
+    height: 40px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i{
+        color: black;
+    }
+
+    &:hover{
+        background: black;
+        color: white;
+        box-shadow: 0 0  10px 4px #FFF;
+        i{
+            color: white;
+        }
+    }
+
+    transition: all .3s;
+}
+
+.formulario {
     margin: auto;
     padding: 1em;
-    height: 100%;
     display: flexbox;
     justify-content: left;
     align-items: left;
     background: rgba(0,0,0,.8);
     box-shadow: 0 0 20px purple;
     border-radius: 10px;
-    width: 1600px;
+    width: 60%;
+    height: 100%;
 }
-section.formulario p.titulo{
-
+.formulario .titulo{
     font-size: 2em;
     padding: 1em;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.6);
     box-shadow: 0 0 20px purple;
     border-radius: 10px;
     margin: 1em;
     text-align: center;
+    
     span{
         font-weight: bold;
         color: lightseagreen;
     }
-} 
+}   
 
-.entrada {
-    margin-bottom: 15px;
+#contacto-formulario{
+    display: flex;
+    justify-content: center;
+    height: 30em;
+
+    .datos{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mensaje{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 label {
+    font-size: 1.3em;
     color: rgb(255, 255, 255);
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin: 1em 0;
 }
 
 input {
-    background-color:rgb(14, 78, 110) ;
+    background-color:rgb(0,0,0,.6); ;
     font-size: 1.5em;
-    width: 100%;
-    padding: 8px 0px 8px 0px;
+    width: 50%;
+    padding: .4em;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 button {
-    width: 100%;
+    width: 20%;
     padding: 10px;
     background-color: rgb(42, 21, 90);
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
+    justify-self: flex-end;
 }
 
 button:hover {
     background-color: rgb(42, 21, 90);
 }
+
+textarea {
+    resize: none !important;
+    font-size: 1em;
+    padding: 1em;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 10px;
+    margin: 1em;
+}
+
+
 
 footer{
     background: #000;
@@ -110,10 +176,37 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+
     ul{
+        width: 110%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         list-style: none;
         color: #FFF;
+        
+        li{
+            a{
+                padding: 1em;
+                border-radius: 10px;
+                text-decoration: none;
+                transition: all .2s;
+                &:hover{
+                    color: black;
+                    background: white;
+                }
+            }
+        }
+
+        #redes{
+            padding: 1em;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all.2s;
+            cursor: pointer;
+            &:hover{
+                color: black;
+                background: white;
+            }
+        }
     }
 }
