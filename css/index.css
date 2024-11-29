@@ -32,10 +32,10 @@ body{
         box-shadow: 20px 20px 30px rgb(129, 3, 146);
     }
     33%{
-        box-shadow: 20px -20px 30px rgb(3, 106, 146);
+        box-shadow: 20px -20px 30px rgb(3, 61, 95);
     }
     66%{
-        box-shadow: -20px -20px 30px rgb(146, 3, 3);
+        box-shadow: -20px -20px 30px rgb(5, 112, 145);
     }
     100%{
         box-shadow: -20px 20px 30px rgb(82, 3, 146);

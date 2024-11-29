@@ -140,6 +140,17 @@ body{
     }
 }
 
+.carrito{
+    margin: 1em;
+    border-top: 2px solid black;
+
+    h2{
+        font-size: 2em;
+        padding: 1em;
+        border-bottom: 2px solid black;
+    }
+}
+
 footer{
     background: #000;
     padding: 1em;
@@ -245,8 +256,8 @@ footer{
     }
 }
 
-#menuBtnContenedor{
-    display: none;
+.menuBtnContenedor{
+    display: none !important;
 }
 
 @media screen and (max-width: 720px){
@@ -256,11 +267,31 @@ footer{
     }
 
     .navbar{
-        display: none;
+        display: none !important;
     }
 
+    .infoContainer{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90vw;
+        padding: 2em;
+        margin: 0;
+
+        #fotoPerfil{
+            align-items: flex-start;
+            width: 50%;
+            height: auto;
+        }
+
+        .datosUser{
+            width:80vw;
+            margin: 0;
+        }
+    }
+
+
     .menuBtnContenedor{
-        display: block;
+        display: block !important;
         background: white;
         position: fixed;
         margin: 1em;
@@ -271,59 +302,15 @@ footer{
             padding: .7em;
         }
     }
-    .menuBtnContenedor:hover ~ .menu{
+    .menuBtnContenedor:focus ~ .menu{
         display: flex;
-    }
-
-    .formulario{
-        background: none;
-        box-shadow: none;
-        width: 90%;
-
-        .titulo{
-            font-size: 1.2em;
-            width: 100%;
-        }
-        
-        form{
-            width: 100%;
-            padding: 1em;
-            background: rgba(0,0,0,.5);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgb(165, 4, 152);
-
-            .datosCaja{
-                flex-direction: column;
-                gap: 0;
-                margin: 0;
-                label{
-                    font-size: 1em;
-                    color: rgb(255, 255, 255);
-                    display: block;
-                    font-weight: bold;
-                    margin: 1em 0;
-                }
-            }
-            .mensajeCaja{
-                flex-direction: column;
-                gap: 0;
-                margin: 0;
-                label{
-                    font-size: 1em;
-                    color: rgb(255, 255, 255);
-                    display: block;
-                    font-weight: bold;
-                    margin: 1em 0 .8em 0;
-                }
-            }
-        }
     }
 
     footer{
         bottom: 0;
         padding: 1em 0 0 0;
         width: 100%;
-        position: relative;
+        position: absolute;
         ul{
             width: 100%;
             flex-direction: column;
@@ -364,12 +351,26 @@ footer{
     .navbar{
         width: 95%;
     }
+
     
+    
+    .carrito{
+        margin: 1em;
+        border-top: 2px solid black;
+
+        h2{
+            font-size: 2em;
+            padding: 1em;
+            border-bottom: 2px solid black;
+        }
+    }
+
+
     footer{
         bottom: 0;
         padding: 1em 0 0 0;
         width: 100%;
-        position: relative;
+        position: absolute;
         ul{
             width: 100%;
             flex-direction: column;
@@ -409,11 +410,16 @@ footer{
     .navbar{
         width: 80%;
     }
+
+    .infoContainer{
+        align-items: center;
+    }
     
     footer{
+        bottom: 0;
         padding: 1em 0 0 0;
-        
-        position: relative;
+        width: 100%;
+        position: absolute;
         ul{
             width: 100%;
             flex-direction: column;
