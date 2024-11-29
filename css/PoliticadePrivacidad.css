@@ -35,6 +35,19 @@ body{
 .nav-item{
     display: flex;
     align-items: center;
+    padding: .5em;
+    border-radius: 10px;
+    transition: all .2s;
+    &:hover{
+        background: black;
+    }
+}
+
+
+.nav-item:nth-child(5){
+    &:hover{
+        background: none;
+    }
 }
 
 #navLogo{
@@ -132,14 +145,42 @@ footer{
         }
 
         #redes{
-            padding: 1em;
-            border-radius: 10px;
             text-decoration: none;
             transition: all.2s;
             cursor: pointer;
-            &:hover{
+
+            span{
+                padding: 1em;
+                border-radius: 10px;
+                transition: all .2s;
+
+                &:hover{
                 color: black;
                 background: white;
+                }
+            }
+
+            #redesActive{
+                display: none;
+                background: white;
+                width: 12em;
+                border-radius: 10px;
+                a{
+                    padding: 10px;
+                    height: 70%;
+                    img{
+                        width: 2em;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &:active #redesActive{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: absolute;
+                    transform: translateY(-5.8em);
             }
         }
     }

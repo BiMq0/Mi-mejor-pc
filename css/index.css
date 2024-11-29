@@ -22,6 +22,24 @@ body{
 #titulo{
     width: 50em;
     margin: 1em 0 1em 0;
+    animation: logoAnim 4s infinite cubic-bezier(.1,2,.3,.1);
+    padding-inline: 3em;
+    border-radius: 30%;
+}
+
+@keyframes logoAnim {
+    0%{
+        box-shadow: 20px 20px 30px rgb(129, 3, 146);
+    }
+    33%{
+        box-shadow: 20px -20px 30px rgb(3, 106, 146);
+    }
+    66%{
+        box-shadow: -20px -20px 30px rgb(146, 3, 3);
+    }
+    100%{
+        box-shadow: -20px 20px 30px rgb(82, 3, 146);
+    }    
 }
 
 p{
