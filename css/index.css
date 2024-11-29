@@ -88,6 +88,9 @@ p{
         transition: .2s;
     }
 }
+#btnLogin{
+    display: none;
+}
 
 #btnUsuario{
     position: absolute;
@@ -123,7 +126,9 @@ p{
 @media screen and (max-width: 640px){
     #titulo{
         width: 100%;
-        margin: 5em 0 0 0;
+        margin: 10em 0 0 0;
+        animation: none;
+        padding: 0;
     }
 
     p{
@@ -131,16 +136,14 @@ p{
         margin: 10% 0 0 0;
     }
 
-    .link_container{
-        .link:nth-child(1){
-            display: none;
-        }
-        .link:nth-child(3){
-            display: none;
-        }
+    .link{
+        display: none;
     }
-    #usuario{
-        height: 30px;
-        width: 25px;
+    #btnLogin{
+        display: block !important;
+    }
+
+    #btnUsuario{
+        display: none;
     }
 }

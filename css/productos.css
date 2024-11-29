@@ -120,7 +120,7 @@ body{
     }
 }
 
-main {
+#mainSection {
     margin: 1em 0 5em 0; 
     border-radius: 10px;
 }
@@ -142,6 +142,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 2em 0 1em 0;
+    gap: 1em;
 
     .producto {
         gap: 1em;
@@ -267,6 +268,246 @@ footer{
                     align-items: center;
                     position: absolute;
                     transform: translateY(-5.8em);
+            }
+        }
+    }
+}
+
+#tituloBueno{
+    text-align: center;
+    font-size: 2em;
+    margin: 2em 0 0 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none !important;
+}
+
+.menu{
+    display: none;
+    background-color: rgba(0,0,0,.9);
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100vh;
+    width: 60%;
+    z-index: 1;
+    transition: all .2s;
+
+    a{
+        margin: 1em 0 0 2em;
+        position: relative;
+        width: 50%;
+        background-color: rgba(121,9,118,.5);
+        padding: .3em;
+        border-radius: 10px;
+    }
+
+    #navLogo{
+        background-color: rgba(255,255,255,0);
+        position: relative;
+        left: 0;
+        top: 2em;
+        
+        #logo{
+            width: 10em;
+        }
+    }
+}
+
+#menuBtnContenedor{
+    display: none;
+}
+
+
+@media screen and (max-width: 720px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #tituloBueno{
+        display: block !important;
+    }
+
+    #filtros{
+        position: absolute;
+        font-size: 1em;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1em;
+        margin: 4em 0 0 0;
+        right: 0;
+    }
+    
+    #mainSection {
+        width: 100%;
+        margin: 1em 0 5em 0; 
+        border-radius: 10px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    #menuBtnContenedor{
+        display: block;
+        background: white;
+        top : 0;
+        position: fixed;
+        margin: 1em;
+        cursor: pointer;
+        border-radius: 10px;
+        i{
+            color: black;
+            padding: .4em 0;
+        }
+    }
+    #menuBtnContenedor:hover ~ .menu{
+        display: flex;
+    }
+
+    .productos{
+        .producto{
+            width: 10em;
+            height: 20zem;
+
+            button{
+                width:5em;
+                font-size: 1em;
+                margin: 0;
+                padding: .2em;
+            }
+
+            img{
+                width: 5em;
+                height: 5em;
+            }
+        }
+    }
+
+    footer{
+        bottom: 0;
+        padding: 1em 0 0 0;
+        width: 100%;
+        position: relative;
+        ul{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            li{
+                a{
+                    padding: 1em;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    transition: all .2s;
+                    &:hover{
+                        color: black;
+                        background: white;
+                    }
+                }
+            
+                #redes{
+                    text-decoration: none;
+                    transition: all.2s;
+                    cursor: pointer;
+                    span{
+                        padding: 1em;   
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1410px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar{
+        width: 95%;
+    }
+    
+    footer{
+        bottom: 0;
+        padding: 1em 0 0 0;
+        width: 100%;
+        position: relative;
+        ul{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            li{
+                a{
+                    padding: 1em;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    transition: all .2s;
+                    &:hover{
+                        color: black;
+                        background: white;
+                    }
+                }
+            
+                #redes{
+                    text-decoration: none;
+                    transition: all.2s;
+                    cursor: pointer;
+                    span{
+                        padding: 1em;   
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar{
+        width: 80%;
+    }
+    
+    footer{
+        padding: 1em 0 0 0;
+        
+        position: relative;
+        ul{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            li{
+                a{
+                    padding: 1em;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    transition: all .2s;
+                    &:hover{
+                        color: black;
+                        background: white;
+                    }
+                }
+            
+                #redes{
+                    text-decoration: none;
+                    transition: all.2s;
+                    cursor: pointer;
+                    span{
+                        padding: 1em;   
+                    }
+                }
             }
         }
     }
