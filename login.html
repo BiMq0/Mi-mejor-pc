@@ -11,17 +11,19 @@
         <link rel="icon" type="image/png" href="imagenes/logo.png">
     </head>
     <body>
-        <form>
-            <h1>Inicia Sesión</h1>
-            <label for="usuario">Usuario: </label>
-            <input type="text" placeholder="Introduzca su usuario" id="usuario" required>
-            <label for="contraseña">Contraseña: </label>
-            <input type="password" placeholder="Introduzca su contraseña" id="contraseña" required>
-            <label for="correo">Correo: </label>
-            <input type="email" placeholder="Introduzca su correo" id="correo" required>
+        <section>
+            <h1>Inicia<span style="color: aquamarine;"> Sesión</span></h1>
+            <form>
+                <label for="usuario">Usuario: </label>
+                <input type="text" placeholder="Introduzca su usuario" id="usuario" required>
+                <label for="contraseña">Contraseña: </label>
+                <input type="password" placeholder="Introduzca su contraseña" id="contraseña" required>
+                <label for="correo">Correo: </label>
+                <input type="email" placeholder="Introduzca su correo" id="correo" required>
+                <label for="terminosCheck"> <input type="checkbox" id="terminosCheck" required> Acepto los <a href="terminos.html">Terminos y Condiciones </a></label> 
 
-            <label for="terminosCheck">Acepto los <a href="terminos.html">Terminos y Condiciones</a> <input type="checkbox" id="terminosCheck" required></label>
-            <button type="submit" id="btnEntrar">Entrar</button>
-        </form>
+                <button type="submit" id="btnEntrar">Entrar</button>
+            </form>
+        </section>
     </body>
 </html> 
