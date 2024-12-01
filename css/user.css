@@ -104,6 +104,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 3em;
 
     #fotoPerfil{
@@ -297,46 +298,44 @@ footer{
     }
 
     .infoContainer{
-        padding: 2em;
-        display: flex;
-        justify-content: space-around;
-    
+        margin: 1em 0 0 0;
+        gap: 1em;
+        flex-direction: column;
+
         #fotoPerfil{
-            width: 20%;
-            margin: 0 8em;
-            border-radius: 2em;
+            width: 50%;
             object-fit: cover;
         }
-    
+
         .datosUser{
-            width: 40%;
-            display: flex;
-            flex-grow: 2;
-            flex-direction: column;
-            background: rgba(255, 255,255, .3);
-            justify-content: space-around;
+            width: 90%;
             padding: 1em;
             border-radius: 20px;
+            justify-content: flex-end;
         
+            span{
+                margin: 0;
+                font-size: .8em;
+                letter-spacing: 5px;
+            }
+
             p{
                 padding: .3em;
-                border-radius: 10px;
-                width: fit-content;
+                width: 85%;
                 background: rgba(0, 0,0, .7);
                 padding: 10px;
-                margin: 1em 0;
-                font-size: 1.2em;
+                font-size: 1em;
             }
             button{
-                width: fit-content;
-                padding: .4em;
-                margin: 1em 0 0 0;
-                border: none;
-                border-radius: 10px;
-                background: black;
-                color: white;
-                cursor: pointer;
+                margin: 0;
+                font-size: 1em;
             }
+        }
+    }
+
+    .carrito{
+        h2{
+            font-size: 1em;
         }
     }
 
@@ -345,6 +344,7 @@ footer{
         background: white;
         position: fixed;
         margin: 1em;
+        border: none;
         cursor: pointer;
         border-radius: 10px;
         i{
@@ -403,17 +403,6 @@ footer{
 
     .navbar{
         width: 95%;
-    }
-
-    
-    
-    .carrito{
-        margin: 1em;
-
-        h2{
-            font-size: 2em;
-            padding: 1em;
-        }
     }
 
     footer ul{

@@ -130,7 +130,7 @@ h2 {
     margin:  0 15%;
     font-size: 2em;
     margin-bottom: 20px;
-    color: rgba(100,254,250,1);
+    color: rgb(37, 156, 152);
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 5px solid black;
@@ -149,6 +149,7 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
@@ -328,26 +329,6 @@ footer{
         overflow-x: hidden;
     }
 
-    #tituloBueno{
-        display: block !important;
-    }
-
-    #filtros{
-        position: absolute;
-        font-size: 1em;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 1em;
-        margin: 4em 0 0 0;
-        right: 0;
-    }
-    
-    #mainSection {
-        width: 100%;
-        margin: 1em 0 5em 0; 
-        border-radius: 10px;
-    }
-
     .navbar{
         display: none;
     }
@@ -369,23 +350,73 @@ footer{
         display: flex;
     }
 
+    #mainSection {
+        width: 90%;
+        padding: 1em 0;
+        margin: auto; 
+        border-radius: 10px;
+    }
+
+    #tituloBueno{
+        display: block !important;
+        padding: .3em;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        font-size: 1.7em;
+        box-shadow: 0 0 20px purple;
+    }
+
+    #filtros{
+        position: relative;
+        font-size: 1em;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: fit-content;
+        transform: translateX(-2em);
+
+        select{
+            margin-left: 1em;
+            background: rgba(200, 200, 200, 1);
+            border-radius: 5px;
+            color: black;
+            font-size: .8em;
+    
+            option{
+                color: black;
+                font-size: .5em; 
+            }
+        }
+    }
+
+    h2{
+        font-size: 1.2em;
+        margin: 0;
+        text-align: left;
+    }
+
     .productos{
         .producto{
-            width: 10em;
-            height: 20zem;
-
+            width: 20em;
+            height: 17em;
             button{
-                width:5em;
+                width: 5em;
                 font-size: 1em;
                 margin: 0;
                 padding: .2em;
             }
 
             img{
-                width: 5em;
-                height: 5em;
+                margin: 0;
+                width: 7em;
+                height: 7em;
+            }
+
+            &:hover {
+                transform: translateY(0px);
+                box-shadow: 0 0px 20px rgba(0, 0, 0, 1);
             }
         }
+        
     }
 
     footer{

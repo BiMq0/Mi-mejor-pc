@@ -205,7 +205,7 @@ footer{
     width: 100%;
 
     ul{
-        width: 110%;
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
         list-style: none;
@@ -228,6 +228,7 @@ footer{
             text-decoration: none;
             transition: all.2s;
             cursor: pointer;
+
             span{
                 padding: 1em;
                 border-radius: 10px;
@@ -237,7 +238,6 @@ footer{
                 color: black;
                 background: white;
                 }
-
             }
 
             #redesActive{
@@ -255,7 +255,7 @@ footer{
                 }
             }
 
-            &:hover #redesActive{
+            &:active #redesActive{
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
@@ -306,7 +306,7 @@ footer{
     display: none;
 }
 
-@media screen and (max-width: 690px){
+@media screen and (max-width: 720px){
 
     body{
         overflow-x: hidden;
@@ -333,8 +333,9 @@ footer{
     }
 
     .formulario{
-        background: none;
-        box-shadow: none;
+        padding: 0;
+        margin: 5em auto;
+        width: 100%;
         .titulo{
             font-size: 1.2em;
             width: 100%;
@@ -343,9 +344,7 @@ footer{
         form{
             width: 100%;
             padding: 1em;
-            background: rgba(0,0,0,.5);
             border-radius: 10px;
-            box-shadow: 0 0 20px rgb(165, 4, 152);
 
             .datosCaja{
                 flex-direction: column;
@@ -373,130 +372,8 @@ footer{
             }
         }
     }
-
-    footer{
-        bottom: 0;
-        padding: 1em 0 0 0;
-        width: 100%;
-        position: relative;
-        ul{
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            gap: 1em;
-            li{
-                a{
-                    padding: 1em;
-                    border-radius: 10px;
-                    text-decoration: none;
-                    transition: all .2s;
-                    &:hover{
-                        color: black;
-                        background: white;
-                    }
-                }
-            
-                #redes{
-                    text-decoration: none;
-                    transition: all.2s;
-                    cursor: pointer;
-                    span{
-                        padding: 1em;   
-                    }
-                }
-            }
-        }
-    }
 }
 
-
-@media screen and (max-width: 1410px){
-
-    body{
-        overflow-x: hidden;
-    }
-
-    .navbar{
-        width: 90%;
-    }
-
-    .formulario{
-        background: none;
-        box-shadow: none;
-        width: 60%;
-
-        .titulo{
-            font-size: 1.2em;
-            width: 100%;
-        }
-        
-        form{
-            width: 100%;
-            padding: 1em;
-            background: rgba(0,0,0,.5);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgb(165, 4, 152);
-
-            .datosCaja{
-                flex-direction: column;
-                gap: 0;
-                margin: 0;
-                label{
-                    font-size: 1em;
-                    color: rgb(255, 255, 255);
-                    display: block;
-                    font-weight: bold;
-                    margin: 1em 0;
-                }
-            }
-            .mensajeCaja{
-                flex-direction: column;
-                gap: 0;
-                margin: 0;
-                label{
-                    font-size: 1em;
-                    color: rgb(255, 255, 255);
-                    display: block;
-                    font-weight: bold;
-                    margin: 1em 0 .8em 0;
-                }
-            }
-        }
-    }
-    footer{
-        bottom: 0;
-        padding: 1em 0 0 0;
-        width: 100%;
-        position: relative;
-        ul{
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            gap: 1em;
-            li{
-                a{
-                    padding: 1em;
-                    border-radius: 10px;
-                    text-decoration: none;
-                    transition: all .2s;
-                    &:hover{
-                        color: black;
-                        background: white;
-                    }
-                }
-            
-                #redes{
-                    text-decoration: none;
-                    transition: all.2s;
-                    cursor: pointer;
-                    span{
-                        padding: 1em;   
-                    }
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 1050px){
 
@@ -505,13 +382,15 @@ footer{
     }
 
     .navbar{
-        width: 75%;
+        width: 80%;
     }
 
     .formulario{
         background: none;
-        box-shadow: none;
-        width: 60%;
+        box-shadow: none !important;
+        width: 80%;
+        background: rgba(0,0,0,.6);
+        box-shadow: 0 0 20px rgb(165, 4, 152);
 
         .titulo{
             font-size: 1.2em;
@@ -521,9 +400,7 @@ footer{
         form{
             width: 100%;
             padding: 1em;
-            background: rgba(0,0,0,.5);
             border-radius: 10px;
-            box-shadow: 0 0 20px rgb(165, 4, 152);
 
             .datosCaja{
                 flex-direction: column;
@@ -551,10 +428,71 @@ footer{
             }
         }
     }
+}
+
+@media screen and (max-width: 1410px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar{
+        width: 88%;
+    }
+
+    .formulario{
+        width: 60%;
+        margin: 1em auto 0 auto ;
+        .titulo{
+            font-size: 1.2em;
+            width: 80%;
+        }
+        
+        form{
+            width: 80%;
+            padding: 1em;
+            border-radius: 10px;
+
+            .datosCaja{
+                flex-direction: column;
+                gap: 0;
+                margin: 0;
+
+                label{
+                    font-size: 1em;
+                    color: rgb(255, 255, 255);
+                    display: block;
+                    font-weight: bold;
+                    margin: 1em 0;
+                }
+
+                input{
+                    width: 100%;
+                    padding: .4em;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+            .mensajeCaja{
+                flex-direction: column;
+                gap: 0;
+                margin: 0;
+                label{
+                    font-size: 1em;
+                    color: rgb(255, 255, 255);
+                    display: block;
+                    font-weight: bold;
+                    margin: 1em 0 .8em 0;
+                }
+            }
+        }
+    }
+
     footer{
+        bottom: 0;
         padding: 1em 0 0 0;
         width: 100%;
-        position: relative;
+        position: absolute;
         ul{
             width: 100%;
             flex-direction: column;
@@ -584,3 +522,4 @@ footer{
         }
     }
 }
+
