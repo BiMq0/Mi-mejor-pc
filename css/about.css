@@ -261,35 +261,22 @@ footer{
     display: none;
     background-color: rgba(0,0,0,.9);
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 5em;
+    justify-content: center !important;
+    gap: 4em !important;
     position: fixed;
     top: 0;
     left: 0;
-    border-radius: 10px;
-    height: 100vh;
+    border-radius: 0 !important;
+    height: 70vh !important;
     width: 60%;
     z-index: 1;
     transition: all .2s;
 
     a{
-        margin: 1em 0 0 2em;
         position: relative;
-        width: 50%;
         background-color: rgba(121,9,118,.5);
         padding: .3em;
         border-radius: 10px;
-    }
-
-    #navLogo{
-        background-color: rgba(255,255,255,0);
-        position: relative;
-        left: 0;
-        top: 2em;
-        
-        #logo{
-            width: 10em;
-        }
     }
 }
 

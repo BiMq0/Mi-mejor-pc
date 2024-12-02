@@ -39,7 +39,7 @@ section{
         color: #FFF;
         align-self: center;
         span{
-            color: aquamarine;
+            color: rgb(30, 167, 148);
         }
     }
 
@@ -79,6 +79,7 @@ section{
         button{
             padding: 1em;
             border: none;
+            margin: 1em 0;
             background: rgba(130,50,190,1);
             border-radius: 10px;
             color: #FFF;

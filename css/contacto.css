@@ -270,35 +270,23 @@ footer{
     display: none;
     background-color: rgba(0,0,0,.9);
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 5em;
     position: fixed;
     top: 0;
     left: 0;
-    border-radius: 10px;
-    height: 100vh;
+    height: 70vh;
     width: 60%;
     z-index: 1;
     transition: all .2s;
 
     a{
-        margin: 1em 0 0 2em;
         position: relative;
         width: 50%;
         background-color: rgba(121,9,118,.5);
         padding: .3em;
         border-radius: 10px;
-    }
-
-    #navLogo{
-        background-color: rgba(255,255,255,0);
-        position: relative;
-        left: 0;
-        top: 2em;
-        
-        #logo{
-            width: 10em;
-        }
     }
 }
 
@@ -306,7 +294,7 @@ footer{
     display: none;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 830px){
 
     body{
         overflow-x: hidden;
@@ -322,6 +310,7 @@ footer{
         position: fixed;
         margin: 1em;
         cursor: pointer;
+        align-self: flex-start;
         border-radius: 10px;
         i{
             color: black;
@@ -333,41 +322,61 @@ footer{
     }
 
     .formulario{
-        padding: 0;
-        margin: 5em auto;
-        width: 100%;
+        width: 90% !important;
+        margin: 1em auto !important;
         .titulo{
-            font-size: 1.2em;
-            width: 100%;
+            font-size: 1em;
         }
         
         form{
-            width: 100%;
-            padding: 1em;
-            border-radius: 10px;
-
             .datosCaja{
-                flex-direction: column;
-                gap: 0;
-                margin: 0;
                 label{
-                    font-size: 1em;
-                    color: rgb(255, 255, 255);
-                    display: block;
-                    font-weight: bold;
-                    margin: 1em 0;
+                    font-size: .7em;
+                    margin: 0;
                 }
             }
             .mensajeCaja{
-                flex-direction: column;
-                gap: 0;
-                margin: 0;
                 label{
-                    font-size: 1em;
-                    color: rgb(255, 255, 255);
-                    display: block;
-                    font-weight: bold;
-                    margin: 1em 0 .8em 0;
+                    font-size: .7em;
+                    margin: 0;
+                }
+            }
+
+            button{
+                width: 40% !important;
+            }
+        }
+    }
+
+    footer{
+        bottom: 0;
+        padding: 1em 0 0 0;
+        width: 100%;
+        position: relative;
+        ul{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            li{
+                a{
+                    padding: 1em;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    transition: all .2s;
+                    &:hover{
+                        color: black;
+                        background: white;
+                    }
+                }
+            
+                #redes{
+                    text-decoration: none;
+                    transition: all.2s;
+                    cursor: pointer;
+                    span{
+                        padding: 1em;   
+                    }
                 }
             }
         }
@@ -386,11 +395,8 @@ footer{
     }
 
     .formulario{
-        background: none;
-        box-shadow: none !important;
         width: 80%;
         background: rgba(0,0,0,.6);
-        box-shadow: 0 0 20px rgb(165, 4, 152);
 
         .titulo{
             font-size: 1.2em;
@@ -437,12 +443,12 @@ footer{
     }
 
     .navbar{
-        width: 88%;
+        width: 90%;
     }
 
     .formulario{
-        width: 60%;
-        margin: 1em auto 0 auto ;
+        width: 70%;
+        margin: 1em auto 0 auto;
         .titulo{
             font-size: 1.2em;
             width: 80%;
@@ -489,37 +495,6 @@ footer{
     }
 
     footer{
-        bottom: 0;
-        padding: 1em 0 0 0;
-        width: 100%;
-        position: absolute;
-        ul{
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            gap: 1em;
-            li{
-                a{
-                    padding: 1em;
-                    border-radius: 10px;
-                    text-decoration: none;
-                    transition: all .2s;
-                    &:hover{
-                        color: black;
-                        background: white;
-                    }
-                }
-            
-                #redes{
-                    text-decoration: none;
-                    transition: all.2s;
-                    cursor: pointer;
-                    span{
-                        padding: 1em;   
-                    }
-                }
-            }
-        }
     }
 }
 
