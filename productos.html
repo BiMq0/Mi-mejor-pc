@@ -45,6 +45,7 @@
         <section id="filtros">
             <label for="filtroSeleccion">Filtros: </label>
             <select name="filtroSeleccion" id="filtroSeleccion">
+                <option value="TD">Todos</option>
                 <option value="TP">Tipo</option>
                 <option value="MC">Marca</option>
             </select>
@@ -53,23 +54,26 @@
         <section id="laptops">
             <h2>Laptops</h2>
             <div class="productos">
-                <div class="producto">
+                <div class="producto productoLaptop" id="l1">
                     <img src="https://m.media-amazon.com/images/I/71IsafDXnKL.jpg" alt="Laptop Gaming">
                     <h3>Laptop Gaming</h3>
                     <p>Precio: <strong>Bs. 999</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="l1Stock"></span></p>
+                    <button id="añadirl1">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoLaptop" id="l2">
                     <img src="https://s.libertaddigital.com/2023/10/07/portatil-ultrabook-asus-zenbook-pro-duo-14-2.jpg" alt="Laptop Ultrabook">
                     <h3>Laptop Ultrabook</h3>
                     <p>Precio: <strong>Bs. 799</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="l2Stock"></span></p>
+                    <button id="añadirl2">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoLaptop" id="l3">
                     <img src="https://www.hp.com/content/dam/sites/worldwide/personal-computers/consumer/laptops/2-in-1s/pavilion/pavilion-plus-14-convertible-laptop/HP%20Envy%20x360%2013.3_SpaceBlue@2x.png" alt="Laptop 2 en 1">
                     <h3>Laptop 2 en 1</h3>
                     <p>Precio: <strong>Bs. 650</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="l3Stock"></span></p>
+                    <button id="añadirl3">Añadir al Carrito</button>
                 </div>
             </div>
         </section>
@@ -78,23 +82,26 @@
         <section id="memorias">
             <h2>Almacenamiento</h2>
             <div class="productos">
-                <div class="producto">
+                <div class="producto productoMemoria" id="m1">
                     <img src="https://http2.mlstatic.com/D_NQ_NP_965199-MLC50775285889_072022-O.webp" alt="Memoria USB 64GB">
                     <h3>Memoria USB 64GB</h3>
                     <p>Precio: <strong>Bs. 25</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="m1Stock"></span></p>
+                    <button id="añadirm1">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoMemoria" id="m2">
                     <img src="https://www.kingstonstore.com.br/cdn/shop/products/DTMAX1T4_1024x.jpg?v=1630528287" alt="Memoria USB 128GB">
                     <h3>Memoria USB 128GB</h3>
                     <p>Precio: <strong>Bs. 35</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="m2Stock"></span></p>
+                    <button id="añadirm2">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoMemoria" id="m3">
                     <img src="https://m.media-amazon.com/images/I/71QygIvKzfL.jpg" alt="SSD 1TB">
                     <h3>SSD 1TB</h3>
                     <p>Precio: <strong>Bs. 120</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="m3Stock"></span></p>
+                    <button id="añadirm3">Añadir al Carrito</button>
                 </div>
             </div>
         </section>
@@ -103,23 +110,26 @@
         <section id="ram">
             <h2>Memorias RAM</h2>
             <div class="productos">
-                <div class="producto">
+                <div class="producto productoRam" id="r1">
                     <img src="https://elgeniox.com/cdn/shop/files/memoria-ram-corsair-vengeance-lpx-8gb-3200-mhz20240729T153616474.jpg?v=1722267382&width=750" alt="RAM 8GB DDR4">
                     <h3>RAM 8GB DDR4</h3>
                     <p>Precio: <strong>Bs. 45</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="r1Stock"></span></p>
+                    <button id="añadirr1">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoRam" id="r2">
                     <img src="https://assets.corsair.com/image/upload/akamai/pdp/vengeance-rgb-pro/Content/Vengeance_RGB_Pro_PDP_Black_04.png" alt="RAM 16GB DDR4">
                     <h3>RAM 16GB DDR4</h3>
                     <p>Precio: <strong>Bs. 85</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="r2Stock"></span></p>
+                    <button id="añadirr2">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoRam" id="r3">
                     <img src="https://i.blogs.es/fa82ae/corsair-vengeance/450_1000.jpg" alt="RAM 32GB DDR4">
                     <h3>RAM 32GB DDR4</h3>
                     <p>Precio: <strong>Bs. 150</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="r3Stock"></span></p>
+                    <button id="añadirr3">Añadir al Carrito</button>
                 </div>
             </div>
         </section>
@@ -128,23 +138,26 @@
         <section id="tarjetas-graficas">
             <h2>Tarjetas Gráficas</h2>
             <div class="productos">
-                <div class="producto">
+                <div class="producto productoTarjeta" id="g1">
                     <img src="https://asset.msi.com/resize/image/global/product/product_8_20190314112204_5c89c8dc6db62.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="NVIDIA GTX 1660">
                     <h3>NVIDIA GTX 1660</h3>
                     <p>Precio: <strong>Bs. 350</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="g1Stock"></span></p>
+                    <button id="añadirg1">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoTarjeta" id="g2">
                     <img src="https://matecsbol.com/cdn/shop/files/81DZAnm7akL._AC_SL1500_1200x.jpg?v=1718296601" alt="NVIDIA RTX 3060">
                     <h3>NVIDIA RTX 3060</h3>
                     <p>Precio: <strong>Bs. 600</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="g2Stock"></span></p>
+                    <button id="añadirg2">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoTarjeta" id="g3">
                     <img src="https://www.asus.com/media/global/products/utcn39mqdlxmh2r1/P_setting_xxx_0_90_end_500.png" alt="AMD Radeon RX 5700">
                     <h3>AMD Radeon RX 5700</h3>
                     <p>Precio: <strong>Bs. 500</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="g3Stock"></span></p>
+                    <button id="añadirg3">Añadir al Carrito</button>
                 </div>
             </div>
         </section>
@@ -153,23 +166,26 @@
         <section id="procesadores">
             <h2>Procesadores</h2>
             <div class="productos">
-                <div class="producto">
+                <div class="producto productoProcesador" id="p1">
                     <img src="https://m.media-amazon.com/images/I/71HaUo5Gw-L._AC_UF350,350_QL80_.jpg" alt="Intel Core i5 11600K">
                     <h3>Intel Core i5 11600K</h3>
                     <p>Precio: <strong>Bs. 250</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="p1Stock"></span></p>
+                    <button id="añadirp1">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoProcesador" id="p2">
                     <img src="https://bgamer.pro/wp-content/uploads/2021/01/1111.jpg" alt="AMD Ryzen 5 5600X">
                     <h3>AMD Ryzen 5 5600X</h3>
                     <p>Precio: <strong>Bs. 270</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="p2Stock"></span></p>
+                    <button id="añadirp2">Añadir al Carrito</button>
                 </div>
-                <div class="producto">
+                <div class="producto productoProcesador" id="p3">
                     <img src="https://m.media-amazon.com/images/I/71diouNMRHL._AC_SL1500_.jpg" alt="Intel Core i9 11900K">
                     <h3>Intel Core i9 11900K</h3>
                     <p>Precio: <strong>Bs. 500</strong></p>
-                    <button>Añadir al Carrito</button>
+                    <p>Stock: <span id="p3Stock"></span></p>
+                    <button id="añadirp3">Añadir al Carrito</button>
                 </div>
             </div>
         </section>
@@ -190,6 +206,6 @@
           <li><a href="terminos.html" class="linksFooter">Terminos y condiciones</li>
         </ul>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/productos.js"></script>
 </body>
 </html>
