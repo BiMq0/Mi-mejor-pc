@@ -192,7 +192,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4em;
+    gap: 5em;
     position: fixed;
     top: 0;
     left: 0;
@@ -239,9 +239,6 @@ footer{
             color: black;
             padding: .4em 0;
         }
-    }
-    #menuBtnContenedor:focus ~ .menu{
-        display: flex;
     }
 
 

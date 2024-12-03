@@ -236,9 +236,6 @@ footer{
             padding: .4em 0;
         }
     }
-    #menuBtnContenedor:hover ~ .menu{
-        display: flex;
-    }
 
 
     footer{

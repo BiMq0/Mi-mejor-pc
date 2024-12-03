@@ -290,7 +290,7 @@ footer{
     }
 }
 
-.menuBtnContenedor{
+#menuBtnContenedor{
     display: none;
 }
 
@@ -304,21 +304,20 @@ footer{
         display: none;
     }
 
-    .menuBtnContenedor{
+    #menuBtnContenedor{
         display: block;
         background: white;
+        top : 0;
         position: fixed;
         margin: 1em;
+        padding: 1em;
         cursor: pointer;
-        align-self: flex-start;
+        border: none !important;
         border-radius: 10px;
         i{
             color: black;
-            padding: .7em;
+            padding: .4em 0;
         }
-    }
-    .menuBtnContenedor:focus ~ .menu{
-        display: flex;
     }
 
     .formulario{
