@@ -175,16 +175,39 @@ btnAñadirP3.addEventListener("click", function(){
     localStorage.setItem("pr3", p3);
 });
 
+let productosCarrito = [];
 
-let filtro = document.getElementById("filtroSeleccion").value;
-if(filtro.text == "Todos"){
-    let prod = document.getElementById("laptops"); 
-    prod.style.display = "none";
-}else if(filtro.text == "Tipo"){
-    let prod = document.getElementById("memorias"); 
-    prod.style.display = "none";
-}else if(filtro.text == "Marca"){
-    let prod = document.getElementById("procesadores"); 
-    prod.style.display = "none";
-}
-console.log(filtro);
+
+//Seccion encargada de mostrar y ocultar el menu de filtros
+let btnFiltro = document.getElementById("menuFiltros");
+let filtro = document.querySelector("aside");
+let filtroCerrar = document.querySelector("#mainSection");
+
+filtro.style.display = "none";
+
+
+btnFiltro.addEventListener("click", function(){
+    filtro.style.display = "block";
+});
+
+filtroCerrar.addEventListener("click", function(){
+    filtro.style.display = "none";
+});
+
+//Boton para menu hamburguesa
+let btnMenu = document.getElementById("menuBtnContenedor");
+let menu = document.querySelector(".menu");
+let swMenu = false;
+
+btnMenu.addEventListener("click", function(){
+    btnMenu.style.zIndex = "100";
+    if(swMenu){
+        menu.style.display = "none";
+        swMenu = false;
+    }else{
+        menu.style.display = "flex";
+        swMenu = true;
+    }
+});
+
+

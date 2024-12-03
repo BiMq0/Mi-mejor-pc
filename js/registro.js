@@ -16,15 +16,20 @@ obtenerRegistro.addEventListener("click", function(){
     let contraseña = document.getElementById("contraseñaRegistro").value;
     let telefono = document.getElementById("telefonoRegistro").value;
 
-    let registroUsuario = {
-        usuario: usuario, 
-        correo: correo, 
-        contraseña: contraseña, 
-        telefono: telefono
-    };
-    usuarios.push(registroUsuario);
-    localStorage.setItem("lstUsuarios", JSON.stringify(usuarios));
-    alert("Registro exitoso");
-    window.location.href = "login.html";
+    if(usuario == "" || correo == "" || contraseña == "" || telefono == ""){
+        alert("Todos los campos son obligatorios");
+        return;
+    }else{
+        let registroUsuario = {
+            usuario: usuario, 
+            correo: correo, 
+            contraseña: contraseña, 
+            telefono: telefono
+        };
+        usuarios.push(registroUsuario);
+        localStorage.setItem("lstUsuarios", JSON.stringify(usuarios));
+        alert("Registro exitoso");
+        window.location.href = "login.html";
+    }
 });
 
