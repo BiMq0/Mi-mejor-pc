@@ -2,22 +2,27 @@
 
 var acceso = JSON.parse(localStorage.getItem("lstUsuarios"));
 let btnEntrar = document.getElementById("btnEntrar");
-//cargar lista de usuarios
-btnEntrar.addEventListener("click", function(){
 
+var distancia = acceso.length
+
+
+btnEntrar.addEventListener("click", function(){
     let entradaCorreo = document.getElementById("correoLogin").value;
     let entradaContraseña = document.getElementById("contraseñaLogin").value;
-    let i = 0;
-    for(i = 0; i < acceso.length; i++){
-        let correo = acceso[i].correo;
-        let contraseña = acceso[i].contraseña;
-        if(entradaCorreo ==  correo && entradaContraseña == contraseña){
+    let usuarioEncontrado = false;
+
+    for (let i = 0; i < distancia; i++) {
+        const correo = acceso[i].correo;
+        const contraseña = acceso[i].contraseña;
+
+        if (entradaCorreo === correo && entradaContraseña === contraseña) {
             window.location.href = "user.html";
             localStorage.setItem("usuarioPosicion", i);
+            usuarioEncontrado = true;
             break;
         }
     }
-    if(i == acceso.length){
+    if (!usuarioEncontrado) {
         alert("Usuario o contraseña incorrectos");
     }
 });
