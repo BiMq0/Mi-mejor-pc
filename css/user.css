@@ -167,14 +167,87 @@ body{
 }
 
 .carrito{
-    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1em;
-    border: 2px solid white;
     border-radius: 20px;
+    gap: 2em;
 
     h2{
         font-size: 2em;
         padding: 1em;
+        width: 90%;
+        text-align: center;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+
+    .carritoItems{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+
+
+        .producto {
+            gap: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            width: 20em;
+            padding: 1em;
+            max-width: 30em;
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            }
+    
+            img {
+                width: 40%;
+                height: 7.3em;
+                border-radius: 5px;
+                margin: 2em 0 1em 0;
+            }
+    
+            h3 {
+                font-size: 1.1em;
+                color: white;
+            }
+    
+            p {
+                font-size: 1.1em;
+                margin: 5px 0;
+                color: white;
+    
+                strong {
+                    color: aquamarine;
+                }
+            }
+        }
+    }
+}
+
+
+#btnCarrito{
+    margin: auto;
+    width: fit-content;
+    padding: 1em;
+    border: none;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+        background-color: rgba(82, 21, 130, .5);
     }
 }
 
@@ -226,6 +299,11 @@ footer{
                 background: white;
                 width: 12em;
                 border-radius: 10px;
+                justify-content: space-evenly;
+                align-items: center;
+                position: absolute;
+                transform: translate(-1.4em, -5.8em);
+                animation: popup .4s cubic-bezier(.41,.95,.81,1.31);
                 a{
                     padding: 10px;
                     height: 70%;
@@ -235,16 +313,20 @@ footer{
                     }
                 }
             }
-
-            &:active #redesActive{
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    position: absolute;
-                    transform: translateY(-5.8em);
-            }
         }
     }
+}
+
+@keyframes popup{
+    0%{
+        opacity: 0;
+        transform: translate(-1.4em, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-1.4em, -5.8em);
+    }
+    
 }
 
 
@@ -343,40 +425,6 @@ footer{
             font-size: 1em;
         }
     }
-
-    footer{
-        bottom: 0;
-        padding: 1em 0 0 0;
-        width: 100%;
-        position: relative;
-        ul{
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            gap: 1em;
-            li{
-                a{
-                    padding: 1em;
-                    border-radius: 10px;
-                    text-decoration: none;
-                    transition: all .2s;
-                    &:hover{
-                        color: black;
-                        background: white;
-                    }
-                }
-            
-                #redes{
-                    text-decoration: none;
-                    transition: all.2s;
-                    cursor: pointer;
-                    span{
-                        padding: 1em;   
-                    }
-                }
-            }
-        }
-    }
 }
 
 
@@ -409,4 +457,31 @@ footer{
         align-items: center;
     }
 
+    
+    footer{
+        padding: 1em 0 0 0;
+        position: relative;
+        ul{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+            li{
+                a{
+                    padding: .5em;
+                    transition: all .2s;
+                    &:hover{
+                        color: black;
+                        background: white;
+                    }
+                }
+            }
+
+            #redes{
+                span{
+                    padding: .5em;
+                }
+            }
+        }
+    }
 }
