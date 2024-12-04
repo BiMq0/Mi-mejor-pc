@@ -173,7 +173,24 @@ section.segundo p.titulo{
     padding: 1em;
     background: rgba(0,0,0,.8);
     box-shadow: 0 0 20px purple;
-    border-radius: 10px;
+    border-radius: 10px;#manualesContenedor{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    margin: 1em 0 5em 0;
+    a{
+        padding: 1em;
+        border-radius: 1em;
+        background: rgba(0,0,0,.6);
+        margin: 1em 0;
+        text-decoration: none;
+        transition: all .3s;
+        &:hover{
+            transform: translateY(-1em);
+        }
+    }
+}
     text-align:left;
     display: inline-block;
     span{
@@ -186,6 +203,25 @@ section.segundo iframe{
     width: 90%;
     margin: 3em 0 7em 0;
     border-radius: 2em;
+}
+
+#manualesContenedor{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    margin: 1em 0 5em 0;
+    a{
+        padding: 1em;
+        border-radius: 1em;
+        background: rgba(0,0,0,.6);
+        margin: 1em 0;
+        text-decoration: none;
+        transition: all .3s;
+        &:hover{
+            transform: translateY(-1em);
+        }
+    }
 }
 
 footer{
