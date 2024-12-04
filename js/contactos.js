@@ -12,3 +12,18 @@ btnMenu.addEventListener("click", function(){
         swMenu = true;
     }
 });
+
+//Desplegar y ocultar menú de redes sociales
+let redesSpan = document.getElementById("redesSpan");
+let redesActive = document.getElementById("redesActive");
+let swRedes = false;
+
+redesSpan.addEventListener("click", function(){
+    if(swRedes){
+        redesActive.style.display = "none";
+        swRedes = false;
+    }else{
+        redesActive.style.display = "flex";
+        swRedes = true;
+    }
+});

@@ -5,7 +5,6 @@ let btnEntrar = document.getElementById("btnEntrar");
 
 var distancia = acceso.length
 
-
 btnEntrar.addEventListener("click", function(){
     let entradaCorreo = document.getElementById("correoLogin").value;
     let entradaContraseña = document.getElementById("contraseñaLogin").value;
