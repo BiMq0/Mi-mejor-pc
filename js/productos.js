@@ -42,6 +42,10 @@ let g1Stock = parseInt(localStorage.getItem("g1Stock"));
 let g2Stock = parseInt(localStorage.getItem("g2Stock"));
 let g3Stock = parseInt(localStorage.getItem("g3Stock"));
 
+let p1Stock = parseInt(localStorage.getItem("p1Stock"));
+let p2Stock = parseInt(localStorage.getItem("p2Stock"));
+let p3Stock = parseInt(localStorage.getItem("p3Stock"));
+
 document.getElementById("l1Stock").innerHTML = l1Stock;
 document.getElementById("l2Stock").innerHTML = l2Stock;
 document.getElementById("l3Stock").innerHTML = l3Stock;
