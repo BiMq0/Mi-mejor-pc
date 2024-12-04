@@ -291,18 +291,28 @@ console.log(JSON.parse(localStorage.getItem("carritos"+usuarioPosicion)));
 //Seccion encargada de mostrar y ocultar el menu de filtros
 let btnFiltro = document.getElementById("menuFiltros");
 let filtro = document.querySelector("aside");
-let filtroCerrar = document.querySelector("#mainSection");
+btnFiltro.style.zIndex = "200";
+let filtroSW = false;
 
-filtro.style.display = "none";
 
+if(window.width <= 720){
+    btnFiltro.style.display = "none !important";
+    filtro.style.display = "none";
+}else{
+    filtro.style.display = "block !important";
+    btnFiltro.style.display = "block !important";
+}
 
 btnFiltro.addEventListener("click", function(){
-    filtro.style.display = "block";
+    if(filtroSW){
+        filtro.style.display = "none";
+        filtroSW = false;
+    }else{
+        filtro.style.display = "block";
+        filtroSW = true;
+    }
 });
 
-filtroCerrar.addEventListener("click", function(){
-    filtro.style.display = "none";
-});
 
 
 
