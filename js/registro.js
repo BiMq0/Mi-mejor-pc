@@ -8,7 +8,6 @@ let admin = {
     telefono: "76741337"
 }
 usuarios[0] = admin;
-localStorage.setItem("lstUsuarios", JSON.stringify(usuarios));
 
 obtenerRegistro.addEventListener("click", function(){
     let usuario = document.getElementById("usuarioRegistro").value;
